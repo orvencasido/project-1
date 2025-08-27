@@ -29,7 +29,7 @@ pipeline {
             steps {
                 script {
                     sh "docker rm -f project-1 || true"
-                    sh "docker run -d -p 80:80 --name project 1 ${DOCKER_IMAGE}"
+                    sh "docker run -d -p 80:80 --name project-1 ${DOCKER_IMAGE}"
                 }
             }
         }
