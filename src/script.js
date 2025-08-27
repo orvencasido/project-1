@@ -1,6 +1,6 @@
 async function loadResume() {
     try {
-        const response = await fetch('data.json', { cache: 'no-store' });
+        const response = await fetch('/data/data.json', { cache: 'no-store' });
         const data = await response.json();
 
         // Name and Role
